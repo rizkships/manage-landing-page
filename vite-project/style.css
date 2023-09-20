@@ -1,4 +1,45 @@
+:root {
+  --clr-accent-400: hsl(12, 88% 59%);
+  --clr-accent-100: hsl(13, 100% 96%) ;
 
+  --clr-primary-400:hsl(228, 39% 23%) ;
+
+  --clr-neutral-100: hsl(232, 12% 13%);
+  --clr-neutral-900: hsl(0, 0% 0%);
+
+  --ff-primary: 'Be Vietnam Pro', sans-serif;
+
+  --ff-body: var(--ff-primary) ;
+  --ff-heading: var(--ff-primary) ;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  --fs-300: 0.8125rem;
+  --fs-300: 0.875rem;
+  --fs-300: 0.9375rem;
+  --fs-300: 1rem;
+  --fs-300: 1.875rem;
+  --fs-300: 2.5rem;
+  --fs-300: 3.5rem;
+
+  --fs-body: var(--fs-400);
+  --fs-primary-heading: var(--fs-800);
+  --fs-secondary-heading: var(--fs-700);
+  --fs-nav: var(--fs-500);
+  --fs-button: var(--fs-300);
+}
+
+@media (min-width: 50em) {
+  :root {
+    --fs-body: var(--fs-500);
+    --fs-primary-heading: var(--fs-900);
+    --fs-secondary-heading: var(--fs-800);
+
+    --fs-nav: var(--fs-300);
+  }
+}
 /* Box sizing rules */
 *,
 *::before,
@@ -24,9 +65,13 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -38,18 +83,13 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img,
-picture {
+picture, 
+svg {
   max-width: 100%;
   display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
+
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
