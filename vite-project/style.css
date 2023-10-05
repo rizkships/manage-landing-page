@@ -285,6 +285,12 @@ body {
   .primary-navigation {
     display: none;
   }
+
+  .primary-navigation[data-visible] {
+    display: block;
+    position: flex;
+  }
+
   .mobile-nav-toggle {
     display: block;
     cursor: pointer;
