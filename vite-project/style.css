@@ -288,7 +288,7 @@ body {
 
   .primary-navigation[data-visible] {
     display: block;
-    position: flex;
+    position: fixed;
   }
 
   .mobile-nav-toggle {
