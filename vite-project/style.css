@@ -122,12 +122,6 @@ svg {
 
 
 
-
-
-
-
-
-
 /* general styling */
 
 body {
@@ -303,11 +297,6 @@ border: 0 !important;
   gap: 1rem;
 }
 
-.flow > * + * {
-  margin-top: var(--flow-spacer, 3em);
-}
-
-
 
 @media (min-width: 50em) {
   .even-columns {
@@ -315,6 +304,23 @@ border: 0 !important;
     grid-auto-columns: 1fr;
   }
 }
+
+.vertical-align-center {
+  align-items: center;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+
+
+.flow > * + * {
+  margin-top: var(--flow-spacer, 3em);
+}
+
+
+
 
 .text-primary-400 {
   color: var(--clr-primary-400);
