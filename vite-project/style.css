@@ -260,7 +260,11 @@ p[data-width="width"] {
     }
 
 }
+/* footer */
 
+.primary-footer {
+  --logo-color: var(--clr-neutral-100)
+}
 /* footer navigation */ 
 
 .footer-nav {
@@ -291,6 +295,7 @@ text-decoration: none;
 
 .social-icon {
   width: var(--size-600);
+  aspect-ratio: 1;
   fill: var(--clr-neutral-100);
 }
 
