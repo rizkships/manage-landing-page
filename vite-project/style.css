@@ -412,6 +412,25 @@ text-decoration: none;
   opacity: 0.1;
 }
 
+/* Numbered Items */
+
+.numbered-items {
+  counter-reset: count;
+}
+
+.numbered-items li {
+  counter-increment: count;
+}
+
+.numbered-items li::before {
+  content: "0" counter(count) ;
+  background-color: var(--clr-accent-400);
+  color: var(--clr-neutral-100);
+  font-weight: var(--fw-bold);
+  padding: var(--size-200) var(--size-500);
+  border-radius: 100vw;
+}
+
 /* Utility classes */
 
 .visually-hidden {
