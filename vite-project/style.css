@@ -416,6 +416,8 @@ text-decoration: none;
 
 .numbered-items {
   counter-reset: count;
+  width: fit-content;
+  margin-inline: auto;
 }
 
 .numbered-items li {
@@ -521,6 +523,8 @@ border: 0 !important;
   }
 }
 
+
+
 .vertical-align-center {
   align-items: center;
 }
@@ -540,6 +544,25 @@ border: 0 !important;
 .flow > * + * {
   margin-top: var(--flow-spacer, 3em);
 }
+
+.text-center {
+  text-align: center;
+}
+
+.text-center p {
+  margin-inline: auto;
+}
+
+@media (max-width:50em) {
+  .text-center-sm-only {
+    text-align: center;
+  }
+
+  .text-center-sm-only p {
+    margin-inline: auto;
+  }
+  }
+
 
 
 
@@ -613,6 +636,10 @@ border: 0 !important;
 }
 .padding-block-700 {
   padding-block: var(--size-700);
+}
+
+.margin-bottom-700 {
+  margin-block-end: var(--size-700);
 }
 
 .display-sm-none {
