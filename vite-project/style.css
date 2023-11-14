@@ -251,6 +251,9 @@ p[data-width="wide"] {
     display: block;
   }
 
+
+          
+
   .mobile-nav-toggle {
     display: block;
     position: fixed;
@@ -260,10 +263,17 @@ p[data-width="wide"] {
     background: transparent;
     border: 0;
     padding: 0.5em;
+    width: 1.5rem;
+    aspect-ratio: 1;
+
+    background-image: url("manage-landing-page-master/images/icon-hamburger.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
-  .mobile-nav-toggle .icon-close {
-    display: none;
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url("manage-landing-page-master/images/icon-close.svg");
   }
 }
 
